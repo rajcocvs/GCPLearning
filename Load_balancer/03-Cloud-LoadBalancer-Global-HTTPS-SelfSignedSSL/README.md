@@ -15,7 +15,7 @@ cd SSL-SelfSigned-Certs
 openssl genrsa -out app1.key 2048
 
 # Create your app1 certificate signing request:
-openssl req -new -key app1.key -out app1.csr -subj "/CN=app1.stacksimplify.com"
+openssl req -new -key app1.key -out app1.csr -subj "/CN=app1.interllicert.com"
 
 # Create your app1 certificate:
 openssl x509 -req -days 7300 -in app1.csr -signkey app1.key -out app1.crt
