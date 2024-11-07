@@ -51,7 +51,7 @@ Observation:
 - Click on **CREATE**
 ```t
 # Using gcloud (Optional - for reference only)
-gcloud compute --project=gcplearn9 firewall-rules create fw-ingress-80-allinstances \
+gcloud compute firewall-rules create fw-ingress-80-allinstances \
     --description="Allow inbound port 80 for all instances in a network" \
     --direction=INGRESS \
     --priority=1000 \
