@@ -57,7 +57,7 @@ gcloud compute firewall-rules create fw-ingress-80-allinstances \
     --priority=1000 \
     --network=vpc2-custom \
     --action=ALLOW \
-    --rules=tcp:80 \
+    --rules=tcp:80,tcp:22 \
     --source-ranges=0.0.0.0/0
 ```
 ## Step-04: Access Application deployed in VM
